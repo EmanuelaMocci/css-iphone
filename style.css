@@ -1,0 +1,41 @@
+/* reset */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* /reset */
+
+/* common */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /common */
+
+/* main container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /main container */
+
+/* iphone back */
+.iphone-back{
+    height: 480px;
+    width: 260px;
+    background-color: #F5E2C7;
+    border-radius: 40px;
+}
+.camera-container{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    border: 1px solid #CCBFA8;
+}
+/* /iphone back */
