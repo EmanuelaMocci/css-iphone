@@ -26,16 +26,151 @@ body{
 /* iphone back */
 .iphone-back{
     height: 480px;
-    width: 260px;
-    background-color: #F5E2C7;
+    width: 240px;
+    background: rgb(250,230,204);
+    background: linear-gradient(72deg, rgba(250,230,204,1) 58%, rgba(254,247,234,1) 100%);
     border-radius: 40px;
+    /* box-shadow: 27px -23px 10px 0px #FF0000; */
 }
+
+/* camera container */
 .camera-container{
-    background-color: red;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border-radius: 30px;
-    margin: 10px;
+    margin: 13px;
     border: 1px solid #CCBFA8;
+    box-shadow: 3px -3px 7px -1px #B3A794,
+    0px 0px 1px 2px #fffcee, 
+    -2px 3px 5px 2px rgba(184,173,154,0.79), 
+    inset -3px 0px 0px 0px #F2EEE9,
+    inset 5px 0px 2px -2px #EBD9BF,
+    inset 6px 0px 1px -2px #FFF1DD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background: rgb(156,149,141);
+background: linear-gradient(68deg, rgba(156,149,141,0.6460959383753502) 46%, rgba(222,209,190,1) 46%); */
 }
+.camera-container-shadow{
+    position: absolute;
+    height: 109px;
+    width: 110px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 29px;
+
+    bottom: 0px;
+    left: 0;
+    /* background: rgb(156,149,141);
+background: linear-gradient(63deg, rgba(156,149,141,0.4780287114845938) 44%, rgba(222,209,190,0) 44%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(63deg, rgba(0,0,0,0.258420868347339) 44%, rgba(222,209,190,0) 44%);
+}
+.camera-left-container{
+    height: 100%;
+}
+.camera-top, .camera-bottom, .camera-center{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    /* background-color: #d1b682; */
+    background: rgb(158,138,106);
+    background: linear-gradient(63deg, rgba(158,138,106,1) 0%, rgba(255,222,172,1) 78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 0px 0.8px #866B31,
+    inset 3px 0px 1px 0px rgba(154,134,102,0.83),
+    -1px 2px 1.5px 0.5px rgba(166,152,116,0.95);
+}
+
+
+.camera-container .camera-top-inner1, .camera-center-lens-1{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #35373C;
+    border: 1px solid #1F232A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -6px 1px 0px #494949;
+}
+.camera-container .camera-top-inner2, .camera-center-lens-2{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    /* background-color: #070707; */
+    background: rgb(82,82,82);
+    background: linear-gradient(180deg, rgba(82,82,82,1) 0%, rgba(27,27,26,1) 78%);
+    box-shadow: 0px 0px 0px 0.3px #1F232A;
+    /* border: 2px solid #363636; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera-container .camera-bottom-inner{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: black;
+}
+.camera-center-lens-3{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgb(72,74,80);
+    background: linear-gradient(180deg, rgba(72,74,80,1) 0%, rgba(32,43,58,1) 78%);
+    box-shadow: 0px 0px 0px 0.3px rgba(32,43,58,0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera-center-lens-4{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #282828;
+    box-shadow: inset 3.3px 0px 1px -2px #74a6bb,
+    inset -3px 0px 0.5px -2px #7C8FCA,
+    inset -6px 0px 0.5px -3px #1F4D76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera-center-lens-5{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #272727;
+    border: 1px solid #272727;
+    box-shadow: 0px 0px 0.5px 1px #8784813d, 
+    inset 4px 0px 0.8px -2.5px #5E9EE3,
+    inset -3px 0px 0.5px -2px #56637A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.camera-center-lens-6{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #3e8b79;
+    position: relative;
+}
+.light{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -1px;
+    right: -1px;
+    box-shadow: 0px 0px 1px 0.5px #FFFFFF;
+}
+/* camera container */
+
 /* /iphone back */
