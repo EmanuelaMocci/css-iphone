@@ -62,10 +62,13 @@ body{
 }
 .camera-left-container{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 .camera-top, .camera-bottom, .camera-center{
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: rgb(158,138,106);
     background: linear-gradient(63deg, rgba(158,138,106,1) 0%, rgba(255,222,172,1) 78%);
@@ -77,6 +80,10 @@ body{
     box-shadow: 0px 0px 0px 0.8px #866B31,
     inset 3px 0px 1px 0px rgba(154,134,102,0.83),
     -1px 2px 1.5px 0.5px rgba(166,152,116,0.95);
+}
+.camera-top{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 .camera-container .camera-top-lens-1, .camera-center-lens-1{
     width: 38px;
@@ -162,6 +169,88 @@ body{
     box-shadow: 0px 0px 1px 0.2px #FFFFFF;
 }
 /* /camera top */
+
+/* camera bottom */
+.camera-bottom-lens-1{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgb(44, 46, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera-bottom-lens-2{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: rgb(44, 46, 53);
+    box-shadow: 0px 0px 0px 1px #525252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera-bottom-lens-3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3a3a46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-bottom-lens-4{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 4px 0px 3px -2px #3E8B79,
+    inset -3px 0px 0.8px -2px #7C8FCA,
+    inset -6.5px 0px 1px -3px #173075;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-bottom-lens-5{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 0.2px 0px 0px 0px #696969;
+    position: relative;
+}
+.light-smaller-pink{
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #DAA1D6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 0.5px 0.8px #DAA1D6;
+}
+.inner-light-1{
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #9cade2;
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    box-shadow: 0px 0px 0.5px 0.3px #9cade2;
+}
+.inner-light-2{
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #d6ddf5;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    box-shadow: 0px 0px 0.5px 0.3px #d6ddf5;
+}
+/* /camera bottom */
+
 .camera-center-lens-2{
     width: 34px;
     height: 34px;
@@ -172,12 +261,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.camera-container .camera-bottom-inner{
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: black;
 }
 .camera-center-lens-3{
     width: 26px;
