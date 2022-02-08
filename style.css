@@ -13,14 +13,21 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* /common */
-
-/* main container */
-.container{
+.container, .camera-top, .camera-bottom, 
+.camera-center,.camera-top-lens-3,
+.camera-container .camera-top-lens-1, .camera-center-lens-1,
+.camera-top-lens-2, .camera-top-lens-4, .camera-top-lens-5,
+.camera-top-lens-6, .camera-bottom-lens-1, .camera-bottom-lens-2,
+.camera-bottom-lens-3, .camera-bottom-lens-4, .camera-right-container,
+.camera-right-light, .camera-center-lens-2, .camera-center-lens-3,
+.camera-center-lens-4, .camera-center-lens-5{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* /common */
+
+/* main container */
 /* /main container */
 
 /* iphone back */
@@ -39,10 +46,10 @@ body{
     border-radius: 30px;
     margin: 13px;
     border: 1px solid #CCBFA8;
+    background-color: #FCF0DE;
     box-shadow: 3px -3px 7px -1px #B3A794,
-    0px 0px 1px 2px #fffcee, 
+    0px 0px 3px 2px #fffcee, 
     -2px 3px 5px 2px rgba(184,173,154,0.79), 
-    inset -3px 0px 0px 0px #F2EEE9,
     inset 5px 0px 1px -2px #EBD9BF,
     inset 6px 0px 1px -2px #FFF1DD;
     position: relative;
@@ -58,7 +65,7 @@ body{
     bottom: 0px;
     left: 0;
     background: rgb(0,0,0);
-    background: linear-gradient(68deg, rgba(0,0,0,0.258420868347339) 46%, rgba(222,209,190,0) 46%);
+    background: linear-gradient(68deg, rgba(0, 0, 0, 0.13) 46%, rgba(236, 218, 193, 0) 46%);
 }
 .camera-left-container{
     height: 100%;
@@ -72,9 +79,6 @@ body{
     border-radius: 50%;
     background: rgb(158,138,106);
     background: linear-gradient(63deg, rgba(158,138,106,1) 0%, rgba(255,222,172,1) 78%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 5px;
     margin-top: 5px;
     box-shadow: 0px 0px 0px 0.8px #866B31,
@@ -92,18 +96,12 @@ body{
     background: rgb(136,136,136);
     background: linear-gradient(216deg, rgba(136,136,136,1) 0%, rgba(21,27,37,1) 78%);
     border: 1px solid #1F232A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: inset 0px -6px 1px 0px #494949;
 }
 .camera-container .camera-top-lens-2 {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0px 0px 0px 0.3px #1F232A;
     background: rgba(142,142,142) ;
     background: linear-gradient(240deg, rgba(142,142,142,1)  0%, rgba(21,27,37,1) 55%);
@@ -114,9 +112,6 @@ body{
     height: 15px;
     border-radius: 50%;
     background-color: #2a2a33;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-top-lens-4{
     width: 11px;
@@ -124,9 +119,6 @@ body{
     border-radius: 50%;
     background-color: #2f2f38;
     box-shadow: 0px 0px 2px 1px #1F232A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-top-lens-5{
     width: 9px;
@@ -134,9 +126,6 @@ body{
     border-radius: 50%;
     background-color: rgb(14, 14, 14);
     box-shadow: inset 1px 0px 3px 1px #0E0E0E;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-top-lens-6{
     width: 7px;
@@ -146,9 +135,6 @@ body{
     -0.5px 0px 0.3px 0px #7C8FCA,
     inset -5px 0px 1px -3px #1F4D76,
     0.5px 0px 0.3px 0px #1F4D76;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-top-lens-7{
     width: 3px;
@@ -176,9 +162,6 @@ body{
     height: 38px;
     border-radius: 50%;
     background-color: rgb(44, 46, 53);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-bottom-lens-2{
     width: 34px;
@@ -186,18 +169,12 @@ body{
     border-radius: 50%;
     background-color: rgb(44, 46, 53);
     box-shadow: 0px 0px 0px 1px #525252;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-bottom-lens-3{
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #3a3a46;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .camera-bottom-lens-4{
     width: 12px;
@@ -207,9 +184,6 @@ body{
     box-shadow: inset 4px 0px 3px -2px #3E8B79,
     inset -3px 0px 0.8px -2px #7C8FCA,
     inset -6.5px 0px 1px -3px #173075;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .camera-bottom-lens-5{
     width: 6px;
@@ -251,6 +225,88 @@ body{
 }
 /* /camera bottom */
 
+/* camera right */
+.camera-right-container{
+    flex-direction: column;
+}
+
+/* camera right top */
+.camera-right-light{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    /* background-color: #ece1d9; */
+    background: rgb(181,179,179);
+    background: radial-gradient(circle, rgba(181,179,179,1) 0%, rgba(233,219,206,1) 59%);
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 6px;
+    box-shadow: 0px 0px 0px 0.6px #d4b682,
+    0px 1px 0px 0px #FDF2E4,
+    0px 2.5px 1.5px 0px #DCCFB8,
+    inset 0px 0px 0px 0.8px rgb(240, 232, 226),
+    inset 0px 0px 0px 1px #D3CBC8;
+}
+.light-left{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #FFF9F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 1px 1px #fdd5b5;
+}
+.light-right{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #FFF9F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 1px 1px #F3E9CB;
+}
+.inner-light-left-one{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #fdd5b5;
+    box-shadow: 0px 0px 0px 0.3px #FDD5B5,
+    0px 0px 4px 1.5px #fdd5b5;
+}
+.inner-light-left-two{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #fdd5b5;
+    box-shadow: 0px 0px 0px 0.3px #FDD5B5,
+    0px 0px 4px 1.5px #fdd5b5;
+    margin-top: 1px;
+}
+.inner-light-right-one{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #F3E9CB;
+    box-shadow: 0px 0px 0px 0.3px #F3E9CB,
+    0px 0px 4px 1.5px #F3E9CB;
+}
+.inner-light-right-two{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #F3E9CB;
+    box-shadow: 0px 0px 0px 0.3px #F3E9CB,
+    0px 0px 4px 1.5px #F3E9CB;
+    margin-top: 1px;
+}
+
+/* /camera right light */
+
+.camera-center{
+    margin: 0px 0px 0px 10px;
+}
 .camera-center-lens-2{
     width: 34px;
     height: 34px;
@@ -258,9 +314,6 @@ body{
     background: rgb(82,82,82);
     background: linear-gradient(180deg, rgba(82,82,82,1) 0%, rgba(27,27,26,1) 78%);
     box-shadow: 0px 0px 0px 0.3px #1F232A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-center-lens-3{
     width: 26px;
@@ -269,9 +322,6 @@ body{
     background: rgb(72,74,80);
     background: linear-gradient(180deg, rgba(72,74,80,1) 0%, rgba(32,43,58,1) 78%);
     box-shadow: 0px 0px 0px 0.3px rgba(32,43,58,0.95);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-center-lens-4{
     width: 12px;
@@ -281,9 +331,6 @@ body{
     box-shadow: inset 3.3px 0px 1px -2px #74a6bb,
     inset -3px 0px 0.5px -2px #7C8FCA,
     inset -6px 0px 0.5px -3px #1F4D76;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .camera-center-lens-5{
     width: 6px;
@@ -294,9 +341,6 @@ body{
     box-shadow: 0px 0px 0.5px 1px #8784813d, 
     inset 4px 0px 0.8px -2.5px #5E9EE3,
     inset -3px 0px 0.5px -2px #56637A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 99;
 }
 .camera-center-lens-6{
@@ -317,6 +361,19 @@ body{
     right: -1px;
     box-shadow: 0px 0px 1px 0.5px #FFFFFF;
 }
+.camera-right-dark{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: -12px;
+    margin-top: 7px;
+    background: rgb(84,81,81);
+    background: linear-gradient(180deg, rgba(84,81,81,1) 9%, rgba(50,42,42,1) 78%);
+    box-shadow: 0px 0px 0px 0.3px #000000;
+}
+/* /camera center */
+
 /* camera container */
 
 /* /iphone back */
