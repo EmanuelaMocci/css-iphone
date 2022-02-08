@@ -37,6 +37,7 @@ body{
     background: rgb(250,230,204);
     background: linear-gradient(72deg, rgba(250,230,204,1) 58%, rgba(254,247,234,1) 100%);
     border-radius: 40px;
+    position: relative;
 }
 
 /* camera container */
@@ -387,5 +388,14 @@ body{
 /* /camera center */
 
 /* camera container */
-
+.apple-icon{
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.apple-icon svg{
+    width: 50px;
+    filter: invert(96%) sepia(95%) saturate(161%) hue-rotate(315deg) brightness(101%) contrast(98%);
+}
 /* /iphone back */
