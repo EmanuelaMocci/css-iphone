@@ -489,7 +489,28 @@ body {
 /* iphone front */
 /* buttons */
 .iphone-front {
-  /* background: black; */
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iphone-screen {
+  height: 458px;
+  width: 218px;
+  background-image: url("https://i.pinimg.com/originals/aa/c3/a0/aac3a0d40864a7b733b22ed31b143a77.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+}
+.top-rectangle {
+  background-color: black;
+  height: 15px;
+  width: 100px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 .right-button {
   position: absolute;
