@@ -426,7 +426,7 @@ body {
 }
 /* /camera center */
 
-/* camera container */
+/* apple icon */
 .apple-icon {
   position: absolute;
   top: 50%;
@@ -438,4 +438,21 @@ body {
   filter: invert(96%) sepia(95%) saturate(161%) hue-rotate(315deg)
     brightness(101%) contrast(98%);
 }
+/* /apple icon */
+
+/* buttons */
+.left-button {
+  position: absolute;
+  border-left: 0.5px solid #a09982;
+  border-top: 3px double #615647;
+  border-bottom: 3px double #615647;
+  border-right: none;
+  background-color: #faebd1;
+  height: 50px;
+  width: 1.5px;
+  top: 130px;
+  left: -2.5px;
+}
+/* /buttons */
+
 /* /iphone back */
