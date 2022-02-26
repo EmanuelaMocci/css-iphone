@@ -1,29 +1,42 @@
 /* reset */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /* /reset */
 
 /* common */
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container, .camera-top, .camera-bottom, 
-.camera-center,.camera-top-lens-3,
-.camera-container .camera-top-lens-1, .camera-center-lens-1,
-.camera-top-lens-2, .camera-top-lens-4, .camera-top-lens-5,
-.camera-top-lens-6, .camera-bottom-lens-1, .camera-bottom-lens-2,
-.camera-bottom-lens-3, .camera-bottom-lens-4, .camera-right-container,
-.camera-right-light, .camera-center-lens-2, .camera-center-lens-3,
-.camera-center-lens-4, .camera-center-lens-5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container,
+.camera-top,
+.camera-bottom,
+.camera-center,
+.camera-top-lens-3,
+.camera-container .camera-top-lens-1,
+.camera-center-lens-1,
+.camera-top-lens-2,
+.camera-top-lens-4,
+.camera-top-lens-5,
+.camera-top-lens-6,
+.camera-bottom-lens-1,
+.camera-bottom-lens-2,
+.camera-bottom-lens-3,
+.camera-bottom-lens-4,
+.camera-right-container,
+.camera-right-light,
+.camera-center-lens-2,
+.camera-center-lens-3,
+.camera-center-lens-4,
+.camera-center-lens-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* /common */
 
@@ -31,371 +44,398 @@ body{
 /* /main container */
 
 /* iphone back */
-.iphone-back{
-    height: 480px;
-    width: 240px;
-    background: rgb(250,230,204);
-    background: linear-gradient(72deg, rgba(250,230,204,1) 58%, rgba(254,247,234,1) 100%);
-    border-radius: 40px;
-    position: relative;
+.iphone-back {
+  height: 480px;
+  width: 240px;
+  background: rgb(250, 230, 204);
+  background: linear-gradient(
+    72deg,
+    rgba(250, 230, 204, 1) 58%,
+    rgba(254, 247, 234, 1) 100%
+  );
+  border-radius: 40px;
+  border: 0.8px solid #615647;
+  position: relative;
+  box-shadow: inset 0px 0px 0px 1.8px #f8f4e6, inset 0px 0px 1px 3.6px #bda070;
 }
 
 /* camera container */
-.camera-container{
-    height: 110px;
-    width: 110px;
-    border-radius: 30px;
-    margin: 13px;
-    border: 1px solid #CCBFA8;
-    background-color: #FCF0DE;
-    box-shadow: 3px -3px 7px -1px #B3A794,
-    0px 0px 3px 2px #fffcee, 
-    -2px 3px 5px 2px rgba(184,173,154,0.79), 
-    inset 5px 0px 1px -2px #EBD9BF,
-    inset 6px 0px 1px -2px #FFF1DD,
-    inset -1px 0.3px 0px 1px #FFFAF6;
-    position: relative;
-    display: flex;
-    align-items: center;
+.camera-container {
+  height: 110px;
+  width: 110px;
+  border-radius: 30px;
+  margin: 13px;
+  border: 1px solid #ccbfa8;
+  background-color: #fcf0de;
+  box-shadow: 3px -3px 7px -1px #b3a794, 0px 0px 3px 2px #fffcee,
+    -2px 3px 5px 2px rgba(184, 173, 154, 0.79), inset 5px 0px 1px -2px #ebd9bf,
+    inset 6px 0px 1px -2px #fff1dd, inset -1px 0.3px 0px 1px #fffaf6;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.camera-container-shadow{
-    position: absolute;
-    height: 109px;
-    width: 110px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 29px;
-    bottom: 0px;
-    left: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(68deg, rgba(0, 0, 0, 0.13) 46%, rgba(236, 218, 193, 0) 46%);
+.camera-container-shadow {
+  position: absolute;
+  height: 109px;
+  width: 110px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 29px;
+  bottom: 0px;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    68deg,
+    rgba(0, 0, 0, 0.13) 46%,
+    rgba(236, 218, 193, 0) 46%
+  );
 }
-.camera-left-container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+.camera-left-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
-.camera-top, .camera-bottom, .camera-center{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgb(158,138,106);
-    background: linear-gradient(63deg, rgba(158,138,106,1) 0%, rgba(255,222,172,1) 78%);
-    margin-left: 5px;
-    margin-top: 5px;
-    box-shadow: 0px 0px 0px 0.8px #866B31,
-    inset 3px 0px 1px 0px rgba(154,134,102,0.83),
-    -1px 2px 1.5px 0.5px rgba(166,152,116,0.95);
+.camera-top,
+.camera-bottom,
+.camera-center {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgb(158, 138, 106);
+  background: linear-gradient(
+    63deg,
+    rgba(158, 138, 106, 1) 0%,
+    rgba(255, 222, 172, 1) 78%
+  );
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 0px 0.8px #866b31,
+    inset 3px 0px 1px 0px rgba(154, 134, 102, 0.83),
+    -1px 2px 1.5px 0.5px rgba(166, 152, 116, 0.95);
 }
-.camera-top{
-    margin-top: 0px;
-    margin-bottom: 5px;
+.camera-top {
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
-.camera-container .camera-top-lens-1, .camera-center-lens-1{
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: rgb(136,136,136);
-    background: linear-gradient(216deg, rgba(136,136,136,1) 0%, rgba(21,27,37,1) 78%);
-    border: 1px solid #1F232A;
-    box-shadow: inset 0px -6px 1px 0px #494949;
+.camera-container .camera-top-lens-1,
+.camera-center-lens-1 {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgb(136, 136, 136);
+  background: linear-gradient(
+    216deg,
+    rgba(136, 136, 136, 1) 0%,
+    rgba(21, 27, 37, 1) 78%
+  );
+  border: 1px solid #1f232a;
+  box-shadow: inset 0px -6px 1px 0px #494949;
 }
 .camera-container .camera-top-lens-2 {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0.3px #1F232A;
-    background: rgba(142,142,142) ;
-    background: linear-gradient(240deg, rgba(142,142,142,1)  0%, rgba(21,27,37,1) 55%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0.3px #1f232a;
+  background: rgba(142, 142, 142);
+  background: linear-gradient(
+    240deg,
+    rgba(142, 142, 142, 1) 0%,
+    rgba(21, 27, 37, 1) 55%
+  );
 }
 /* camera top */
-.camera-top-lens-3{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #2a2a33;
+.camera-top-lens-3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #2a2a33;
 }
-.camera-top-lens-4{
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: #2f2f38;
-    box-shadow: 0px 0px 2px 1px #1F232A;
+.camera-top-lens-4 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #2f2f38;
+  box-shadow: 0px 0px 2px 1px #1f232a;
 }
-.camera-top-lens-5{
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: rgb(14, 14, 14);
-    box-shadow: inset 1px 0px 3px 1px #0E0E0E;
+.camera-top-lens-5 {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(14, 14, 14);
+  box-shadow: inset 1px 0px 3px 1px #0e0e0e;
 }
-.camera-top-lens-6{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    box-shadow: inset 3.3px 0px 1px -2px #7C8FCA,
-    -0.5px 0px 0.3px 0px #7C8FCA,
-    inset -5px 0px 1px -3px #1F4D76,
-    0.5px 0px 0.3px 0px #1F4D76;
+.camera-top-lens-6 {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: inset 3.3px 0px 1px -2px #7c8fca, -0.5px 0px 0.3px 0px #7c8fca,
+    inset -5px 0px 1px -3px #1f4d76, 0.5px 0px 0.3px 0px #1f4d76;
 }
-.camera-top-lens-7{
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: black;
-    box-shadow: 0px 0px 0.4px 0.3px #000000;
-    position: relative;
+.camera-top-lens-7 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0px 0px 0.4px 0.3px #000000;
+  position: relative;
 }
-.light-smaller{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: white;
-    top: 0px;
-    left: 0px;
-    box-shadow: 0px 0px 1px 0.2px #FFFFFF;
+.light-smaller {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 1px 0.2px #ffffff;
 }
 /* /camera top */
 
 /* camera bottom */
-.camera-bottom-lens-1{
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: rgb(44, 46, 53);
+.camera-bottom-lens-1 {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgb(44, 46, 53);
 }
-.camera-bottom-lens-2{
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-color: rgb(44, 46, 53);
-    box-shadow: 0px 0px 0px 1px #525252;
+.camera-bottom-lens-2 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgb(44, 46, 53);
+  box-shadow: 0px 0px 0px 1px #525252;
 }
-.camera-bottom-lens-3{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #3a3a46;
+.camera-bottom-lens-3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3a3a46;
 }
-.camera-bottom-lens-4{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: black;
-    box-shadow: inset 4px 0px 3px -2px #3E8B79,
-    inset -3px 0px 0.8px -2px #7C8FCA,
+.camera-bottom-lens-4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: inset 4px 0px 3px -2px #3e8b79, inset -3px 0px 0.8px -2px #7c8fca,
     inset -6.5px 0px 1px -3px #173075;
 }
-.camera-bottom-lens-5{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: black;
-    box-shadow: inset 0.2px 0px 0px 0px #696969;
-    position: relative;
+.camera-bottom-lens-5 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: inset 0.2px 0px 0px 0px #696969;
+  position: relative;
 }
-.light-smaller-pink{
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: #DAA1D6;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    box-shadow: 0px 0px 0.5px 0.8px #DAA1D6;
+.light-smaller-pink {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #daa1d6;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0px 0.5px 0.8px #daa1d6;
 }
-.inner-light-1{
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: #9cade2;
-    position: absolute;
-    right: -1px;
-    bottom: 0;
-    box-shadow: 0px 0px 0.5px 0.3px #9cade2;
+.inner-light-1 {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #9cade2;
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  box-shadow: 0px 0px 0.5px 0.3px #9cade2;
 }
-.inner-light-2{
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: #d6ddf5;
-    position: absolute;
-    right: 0px;
-    bottom: -1px;
-    box-shadow: 0px 0px 0.5px 0.3px #d6ddf5;
+.inner-light-2 {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #d6ddf5;
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+  box-shadow: 0px 0px 0.5px 0.3px #d6ddf5;
 }
 /* /camera bottom */
 
 /* camera right */
-.camera-right-container{
-    flex-direction: column;
+.camera-right-container {
+  flex-direction: column;
 }
 
 /* camera right top */
-.camera-right-light{
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    /* background-color: #ece1d9; */
-    background: rgb(181,179,179);
-    background: radial-gradient(circle, rgba(181,179,179,1) 0%, rgba(233,219,206,1) 59%);
-    margin-left: 10px;
-    margin-top: -10px;
-    margin-bottom: 6px;
-    box-shadow: 0px 0px 0px 0.6px #d4b682,
-    0px 1px 0px 0px #FDF2E4,
-    0px 2.5px 1.5px 0px #DCCFB8,
-    inset 0px 0px 0px 0.8px rgb(240, 232, 226),
-    inset 0px 0px 0px 1px #D3CBC8;
+.camera-right-light {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  /* background-color: #ece1d9; */
+  background: rgb(181, 179, 179);
+  background: radial-gradient(
+    circle,
+    rgba(181, 179, 179, 1) 0%,
+    rgba(233, 219, 206, 1) 59%
+  );
+  margin-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 6px;
+  box-shadow: 0px 0px 0px 0.6px #d4b682, 0px 1px 0px 0px #fdf2e4,
+    0px 2.5px 1.5px 0px #dccfb8, inset 0px 0px 0px 0.8px rgb(240, 232, 226),
+    inset 0px 0px 0px 1px #d3cbc8;
 }
-.light-left{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #FFF9F3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 0px 1px 1px #fdd5b5;
+.light-left {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff9f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 1px 1px #fdd5b5;
 }
-.light-right{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #FFF9F3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 0px 1px 1px #F3E9CB;
+.light-right {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff9f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 1px 1px #f3e9cb;
 }
-.inner-light-left-one{
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #fdd5b5;
-    box-shadow: 0px 0px 0px 0.3px #FDD5B5,
-    0px 0px 4px 1.5px #fdd5b5;
+.inner-light-left-one {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fdd5b5;
+  box-shadow: 0px 0px 0px 0.3px #fdd5b5, 0px 0px 4px 1.5px #fdd5b5;
 }
-.inner-light-left-two{
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #fdd5b5;
-    box-shadow: 0px 0px 0px 0.3px #FDD5B5,
-    0px 0px 4px 1.5px #fdd5b5;
-    margin-top: 1px;
+.inner-light-left-two {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fdd5b5;
+  box-shadow: 0px 0px 0px 0.3px #fdd5b5, 0px 0px 4px 1.5px #fdd5b5;
+  margin-top: 1px;
 }
-.inner-light-right-one{
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #F3E9CB;
-    box-shadow: 0px 0px 0px 0.3px #F3E9CB,
-    0px 0px 4px 1.5px #F3E9CB;
+.inner-light-right-one {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #f3e9cb;
+  box-shadow: 0px 0px 0px 0.3px #f3e9cb, 0px 0px 4px 1.5px #f3e9cb;
 }
-.inner-light-right-two{
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #F3E9CB;
-    box-shadow: 0px 0px 0px 0.3px #F3E9CB,
-    0px 0px 4px 1.5px #F3E9CB;
-    margin-top: 1px;
+.inner-light-right-two {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #f3e9cb;
+  box-shadow: 0px 0px 0px 0.3px #f3e9cb, 0px 0px 4px 1.5px #f3e9cb;
+  margin-top: 1px;
 }
 
 /* /camera right light */
 
-.camera-center{
-    margin: 0px 0px 0px 10px;
+.camera-center {
+  margin: 0px 0px 0px 10px;
 }
-.camera-center-lens-2{
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: rgb(82,82,82);
-    background: linear-gradient(180deg, rgba(82,82,82,1) 0%, rgba(27,27,26,1) 78%);
-    box-shadow: 0px 0px 0px 0.3px #1F232A;
+.camera-center-lens-2 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgb(82, 82, 82);
+  background: linear-gradient(
+    180deg,
+    rgba(82, 82, 82, 1) 0%,
+    rgba(27, 27, 26, 1) 78%
+  );
+  box-shadow: 0px 0px 0px 0.3px #1f232a;
 }
-.camera-center-lens-3{
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: rgb(72,74,80);
-    background: linear-gradient(180deg, rgba(72,74,80,1) 0%, rgba(32,43,58,1) 78%);
-    box-shadow: 0px 0px 0px 0.3px rgba(32,43,58,0.95);
+.camera-center-lens-3 {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgb(72, 74, 80);
+  background: linear-gradient(
+    180deg,
+    rgba(72, 74, 80, 1) 0%,
+    rgba(32, 43, 58, 1) 78%
+  );
+  box-shadow: 0px 0px 0px 0.3px rgba(32, 43, 58, 0.95);
 }
-.camera-center-lens-4{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #282828;
-    box-shadow: inset 3.3px 0px 1px -2px #74a6bb,
-    inset -3px 0px 0.5px -2px #7C8FCA,
-    inset -6px 0px 0.5px -3px #1F4D76;
+.camera-center-lens-4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #282828;
+  box-shadow: inset 3.3px 0px 1px -2px #74a6bb,
+    inset -3px 0px 0.5px -2px #7c8fca, inset -6px 0px 0.5px -3px #1f4d76;
 }
-.camera-center-lens-5{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #272727;
-    border: 1px solid #272727;
-    box-shadow: 0px 0px 0.5px 1px #8784813d, 
-    inset 4px 0px 0.8px -2.5px #5E9EE3,
-    inset -3px 0px 0.5px -2px #56637A;
-    z-index: 99;
+.camera-center-lens-5 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #272727;
+  border: 1px solid #272727;
+  box-shadow: 0px 0px 0.5px 1px #8784813d, inset 4px 0px 0.8px -2.5px #5e9ee3,
+    inset -3px 0px 0.5px -2px #56637a;
+  z-index: 99;
 }
-.camera-center-lens-6{
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background-color: #3e8b79;
-    box-shadow: 0px 0px 1px 0.5px #3e8b79;
-    position: relative;
+.camera-center-lens-6 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #3e8b79;
+  box-shadow: 0px 0px 1px 0.5px #3e8b79;
+  position: relative;
 }
-.light{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: white;
-    bottom: 0px;
-    right: -1px;
-    box-shadow: 0px 0px 1px 0.5px #FFFFFF;
+.light {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: white;
+  bottom: 0px;
+  right: -1px;
+  box-shadow: 0px 0px 1px 0.5px #ffffff;
 }
-.camera-right-dark{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-bottom: -12px;
-    margin-top: 7px;
-    background: rgb(84,81,81);
-    background: linear-gradient(180deg, rgba(84,81,81,1) 9%, rgba(50,42,42,1) 78%);
-    box-shadow: 0px 0px 0px 0.3px #000000;
+.camera-right-dark {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: -12px;
+  margin-top: 7px;
+  background: rgb(84, 81, 81);
+  background: linear-gradient(
+    180deg,
+    rgba(84, 81, 81, 1) 9%,
+    rgba(50, 42, 42, 1) 78%
+  );
+  box-shadow: 0px 0px 0px 0.3px #000000;
 }
-.dot-right{
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background-color: black;
-    position: absolute;
-    right: 10px;
-    bottom: 25px;
-    box-shadow: 0px 0px 0px 0.7px #FFF8ED,
-    0px 0px 0.2px 1px #d8c8ac;
+.dot-right {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+  box-shadow: 0px 0px 0px 0.7px #fff8ed, 0px 0px 0.2px 1px #d8c8ac;
 }
 /* /camera center */
 
 /* camera container */
-.apple-icon{
-    position: absolute;
-    top: 50%; 
-    right: 50%;
-    transform: translate(50%,-50%);
+.apple-icon {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
-.apple-icon svg{
-    width: 50px;
-    filter: invert(96%) sepia(95%) saturate(161%) hue-rotate(315deg) brightness(101%) contrast(98%);
+.apple-icon svg {
+  width: 50px;
+  filter: invert(96%) sepia(95%) saturate(161%) hue-rotate(315deg)
+    brightness(101%) contrast(98%);
 }
 /* /iphone back */
