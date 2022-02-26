@@ -448,10 +448,37 @@ body {
   border-bottom: 3px double #615647;
   border-right: none;
   background-color: #faebd1;
-  height: 50px;
+  height: 60px;
   width: 1.5px;
-  top: 130px;
+  top: 140px;
   left: -2.5px;
+}
+.right-top-button {
+  height: 20px;
+  top: 85px;
+}
+.right-top-button,
+.right-center-button,
+.right-bottom-button {
+  position: absolute;
+  border-right: 0.5px solid #a09982;
+  border-top: 3px double #615647;
+  border-bottom: 3px double #615647;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #faebd1;
+  width: 1.5px;
+  right: -2.5px;
+}
+.right-center-button {
+  height: 40px;
+  top: 120px;
+}
+
+.right-bottom-button {
+  height: 40px;
+  top: 172px;
 }
 /* /buttons */
 
