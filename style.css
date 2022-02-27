@@ -499,11 +499,18 @@ body {
   height: 458px;
   width: 218px;
   /* background-image: url("https://i.pinimg.com/originals/aa/c3/a0/aac3a0d40864a7b733b22ed31b143a77.jpg"); */
-  background-image: url("http://www.iphonehacks.com/wp-content/uploads/2020/06/Apple-iOS-14-Default-Wallpaper-For-Bezel-Less-iPhones.png");
+  /* background-image: url("http://www.iphonehacks.com/wp-content/uploads/2020/06/Apple-iOS-14-Default-Wallpaper-For-Bezel-Less-iPhones.png"); */
+  background-image: url(icons/zoe1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 33px;
+}
+.background1 {
+  background-image: url("http://www.iphonehacks.com/wp-content/uploads/2020/06/Apple-iOS-14-Default-Wallpaper-For-Bezel-Less-iPhones.png");
+}
+.background2 {
+  background-image: url("https://i.pinimg.com/originals/aa/c3/a0/aac3a0d40864a7b733b22ed31b143a77.jpg");
 }
 .top-rectangle {
   background-color: black;
@@ -569,6 +576,28 @@ body {
   height: 40px;
   top: 172px;
 }
+#background1,
+#background2,
+#background-default {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#background1 {
+  background-color: #e78144;
+}
+#background2 {
+  background-color: #ea9ac9;
+}
+#background-default {
+  background-color: #70b2f5;
+}
+.background-image {
+  margin-bottom: auto;
+  margin-top: 10px;
+}
 /* /buttons */
 
 /* top left */
@@ -623,9 +652,12 @@ body {
   margin: 3px;
 }
 .icon div {
-  color: rgb(212, 212, 212);
+  color: rgb(241, 240, 240);
   text-align: center;
   font-size: 8px;
+}
+.border-radius {
+  border-radius: 20px;
 }
 /* /center */
 
@@ -649,8 +681,6 @@ body {
 /* /bottom */
 /* /iphone front */
 
-/* !! da aggiungere di default a iphone-screen */
 .display-none {
   display: none;
-  transition: all 2s ease;
 }

@@ -11,7 +11,6 @@ btnOn.addEventListener("click", function () {
 
 // set real time
 const date = Date().slice(16, 21);
-
 time.textContent = date;
 
 // background
