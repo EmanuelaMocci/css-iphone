@@ -581,12 +581,33 @@ body {
 }
 /* /camera top right */
 
+/* top left */
+.top {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .time {
   font-size: 10px;
   color: white;
-  margin-left: 25px;
   margin-top: 8px;
 }
+/* /top left */
+
+/* top right */
+.top-right {
+  display: flex;
+}
+.top-right svg {
+  width: 10px;
+  height: 10px;
+  filter: invert(99%) sepia(47%) saturate(0%) hue-rotate(242deg)
+    brightness(112%) contrast(101%);
+  margin-left: 2px;
+}
+/* /top right */
 /* /iphone front */
 
 /* !! da aggiungere di default a iphone-screen */
