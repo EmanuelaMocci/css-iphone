@@ -597,8 +597,7 @@ body {
 /* center */
 .icons-container {
   display: flex;
-  align-items: center;
-  height: 100%;
+  margin-top: 10px;
 }
 .line1 {
   display: flex;
@@ -638,6 +637,8 @@ body {
   border-radius: 19px;
   background-color: rgba(207, 207, 207, 0.514);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* /blured bottom icons */
 /* /bottom */
