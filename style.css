@@ -487,7 +487,7 @@ body {
 /* /iphone back */
 
 /* iphone front */
-/* buttons */
+
 .iphone-front {
   background: black;
   display: flex;
@@ -497,13 +497,12 @@ body {
 .iphone-screen {
   height: 458px;
   width: 218px;
-  background-image: url("https://i.pinimg.com/originals/aa/c3/a0/aac3a0d40864a7b733b22ed31b143a77.jpg");
+  /* background-image: url("https://i.pinimg.com/originals/aa/c3/a0/aac3a0d40864a7b733b22ed31b143a77.jpg"); */
+  background-image: url("http://www.iphonehacks.com/wp-content/uploads/2020/06/Apple-iOS-14-Default-Wallpaper-For-Bezel-Less-iPhones.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 33px;
-  display: flex;
-  justify-content: center;
 }
 .top-rectangle {
   background-color: black;
@@ -511,7 +510,26 @@ body {
   width: 100px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
+  position: absolute;
+  top: 10px;
 }
+
+/* blured bottom icons */
+
+.bottom-bar-icons {
+  height: 55px;
+  width: 86%;
+  position: absolute;
+  bottom: 19px;
+  left: 17px;
+  background-color: lightgray;
+  opacity: 0.4;
+  border-radius: 19px;
+}
+
+/* /blured bottom icons */
+
+/* buttons */
 .right-button {
   position: absolute;
   border-right: 0.5px solid #a09982;
@@ -523,6 +541,7 @@ body {
   width: 1.5px;
   top: 140px;
   right: -2.5px;
+  cursor: pointer;
 }
 .left-top-button {
   height: 20px;
@@ -552,4 +571,19 @@ body {
   top: 172px;
 }
 /* /buttons */
+
+/* camera top right */
+.camera-top-right {
+  margin: 2px 20px 0 auto;
+  width: 5px;
+  height: 5px;
+}
+/* /camera top right */
+
 /* /iphone front */
+
+/* !! da aggiungere di default a iphone-screen */
+.display-none {
+  display: none;
+  transition: all 2s ease;
+}
