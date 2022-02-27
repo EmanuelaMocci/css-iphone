@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 .container,
 .camera-top,
@@ -506,7 +507,7 @@ body {
 }
 .top-rectangle {
   background-color: black;
-  height: 15px;
+  height: 18px;
   width: 100px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -574,12 +575,18 @@ body {
 
 /* camera top right */
 .camera-top-right {
-  margin: 2px 20px 0 auto;
+  margin: 3px 20px 0 auto;
   width: 5px;
   height: 5px;
 }
 /* /camera top right */
 
+.time {
+  font-size: 10px;
+  color: white;
+  margin-left: 25px;
+  margin-top: 8px;
+}
 /* /iphone front */
 
 /* !! da aggiungere di default a iphone-screen */
