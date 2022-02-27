@@ -9,6 +9,6 @@ btnOn.addEventListener("click", function () {
 let today = new Date();
 
 let getTime = today.getHours() + ":" + today.getMinutes();
-getTime = ("0" + getTime).slice(-5);
+// getTime = ("0" + getTime).slice(-5);
 
 time.textContent = getTime;
