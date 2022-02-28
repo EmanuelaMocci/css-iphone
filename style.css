@@ -41,9 +41,6 @@ body {
 }
 /* /common */
 
-/* main container */
-/* /main container */
-
 /* iphone back */
 .iphone-back,
 .iphone-front {
@@ -272,7 +269,6 @@ body {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  /* background-color: #ece1d9; */
   background: rgb(181, 179, 179);
   background: radial-gradient(
     circle,
@@ -498,8 +494,6 @@ body {
 .iphone-screen {
   height: 458px;
   width: 218px;
-  /* background-image: url("https://i.pinimg.com/originals/aa/c3/a0/aac3a0d40864a7b733b22ed31b143a77.jpg"); */
-  /* background-image: url("http://www.iphonehacks.com/wp-content/uploads/2020/06/Apple-iOS-14-Default-Wallpaper-For-Bezel-Less-iPhones.png"); */
   background-image: url(icons/zoe1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -600,7 +594,7 @@ body {
 }
 /* /buttons */
 
-/* top left */
+/* top left icons*/
 .top {
   width: 80%;
   margin: auto;
@@ -613,9 +607,9 @@ body {
   color: white;
   margin-top: 8px;
 }
-/* /top left */
+/* /top left icons */
 
-/* top right */
+/* top right icons*/
 .top-right {
   display: flex;
 }
@@ -626,7 +620,7 @@ body {
     brightness(112%) contrast(101%);
   margin-left: 2px;
 }
-/* /top right */
+/* /top right icons*/
 
 /* center */
 .icons-container {
@@ -662,7 +656,6 @@ body {
 /* /center */
 
 /* bottom */
-/* blured bottom icons */
 
 .bottom-bar-icons {
   height: 55px;
@@ -677,10 +670,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* /blured bottom icons */
 /* /bottom */
 /* /iphone front */
 
 .display-none {
   display: none;
 }
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .background-image {
+    display: flex;
+  }
+  .background-image button {
+    margin: 0 3px;
+  }
+  .iphone-front {
+    margin-top: 10px;
+  }
+}
+/* /media query */
