@@ -681,7 +681,7 @@ body {
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    padding: 400px 0 50px 0;
+    padding: 300px 0 50px 0;
   }
   .background-image {
     display: flex;
@@ -696,7 +696,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .container {
-    padding: 600px 0 50px 0;
+    padding: 500px 0 50px 0;
   }
 }
 /* /media query */
