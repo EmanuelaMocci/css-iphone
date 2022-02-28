@@ -681,9 +681,7 @@ body {
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    padding: 600px 0 50px 0;
-    align-items: center;
-    justify-content: center;
+    padding: 400px 0 50px 0;
   }
   .background-image {
     display: flex;
@@ -693,6 +691,12 @@ body {
   }
   .iphone-front {
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 600px 0 50px 0;
   }
 }
 /* /media query */
