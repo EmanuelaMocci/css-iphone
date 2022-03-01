@@ -9,10 +9,6 @@ btnOn.addEventListener("click", function () {
   screen.classList.toggle("display-none");
 });
 
-// set real time
-const date = Date().slice(16, 21);
-time.textContent = date;
-
 // background
 btn1.addEventListener("click", function () {
   screen.classList.add("background1");
@@ -26,3 +22,12 @@ bg.addEventListener("click", function () {
   screen.classList.remove("background1");
   screen.classList.remove("background2");
 });
+
+// set real time
+
+function getCurrentTime() {
+  const date = Date().slice(16, 21);
+  time.textContent = date;
+}
+
+setInterval(getCurrentTime, 1000);
